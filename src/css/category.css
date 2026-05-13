@@ -1,11 +1,16 @@
 .category {
     padding: 1rem 1rem;
+    
+    .title-main {
+        padding: 1rem 1.7rem;
+    }
 
     .category-cards {
         display: grid;
         grid-template-columns: repeat(2, minmax(10%, 45%));
         gap: 1rem;
         margin-top: 2rem;
+        justify-content: center;
 
         .card-category {
             background-color: var(--color-bg);

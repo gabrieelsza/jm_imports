@@ -1,9 +1,9 @@
 .releases {
-    padding: 1rem 1rem;
     background-color: var(--color-bg);
     
-    .title {
+    .title-main {
         color: var(--color-primary-soft);
+        padding: 1rem 2rem;
     }
 
     .cards-shirts {
@@ -11,6 +11,7 @@
         grid-template-columns: repeat(2, minmax(10%, 45%));
         gap: 1rem;
         margin-top: 2rem;
+        justify-content: center ;
 
         .card-shirt {
             background-color: var(--color-text);
