@@ -3,7 +3,7 @@
 
     .category-cards {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, minmax(10%, 50%));
         gap: 1rem;
         margin-top: 2rem;
 
@@ -54,8 +54,8 @@
             margin-top: 2rem;
 
             .card-category {
-                max-width: 260px;
-                min-width: 250px;
+                max-width: 50%;
+                min-width: 16%;
                 height: 270px;
                 justify-content: space-between;
             }

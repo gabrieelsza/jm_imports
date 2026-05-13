@@ -97,7 +97,7 @@
 
         .card-demo {
             img {
-                width: 500px;
+                width: 70%;
                 height: 115vh;
                 object-fit: cover;
             }
