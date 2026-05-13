@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores principais */
+    --color-bg: #19253B;          /* Fundo geral escuro */
+    --color-surface: #141421;     /* Cards / blocos */
+    --color-surface-soft: #1b1b2b;
+
+    --color-primary: #EDAC2D;     /* Amarelo destaque (CTA, links principais) */
+    --color-primary-dark: #c79d10;
+    --color-primary-soft: #FCF6E4;
+
+    --color-secondary: #E3143B;   /* Vermelho/rosa (lancamentos, alertas sutis) */
+    --color-secondary-soft: #3b1120;
+
+    --color-accent-nba: #2563eb;  /* Azul (NBA / esportes americanos) */
+    --color-accent-nfl: #16a34a;  /* Verde (NFL / destaque alternativo) */
+
+    --color-text: #f9fafb;        /* Texto principal */
+    --color-text-muted: #9ca3af;  /* Texto secundário */
+    --color-text-soft: #6b7280;   /* Legendas, labels */
+    --color-border: #272738;      /* Bordas discretas */
+
+    /* Feedback */
+    --color-success: #16a34a;
+    --color-warning: #facc15;
+    --color-error: #ef4444;
+
+    /* Tipografia */
+    --font-fredoka: "Fredoka", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-lexend: "Lexend", system-ui, sans-serif;
+
+    /* Tamanhos de fonte (ajuste se quiser) */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+
+    /* Espaçamentos */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+
+    /* Bordas e sombras */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --shadow-soft: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+h1, h2 {
+    font-family: var(--font-fredoka);
+}
+
+h3, h4 {
+    font-family: var(--font-lexend);
+}
+
+p {
+    font-family: var(--font-fredoka);
+}
+
+a {
+    font-family: var(--font-lexend);
+    text-decoration: none;
+}
+.title-main {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1rem 0;
+
+    .title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: var(--color-secondary);
+    }
+}
+
+li {
+    list-style: none;
+}
+.btn-nav-section { 
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary-soft);
+    margin-bottom: 2rem;
+    transition: .3s;
+
+    &:hover {
+        background-color: #eb0b34;
+        box-shadow: var(--shadow-soft);
+    }
+}  

@@ -1,0 +1,109 @@
+.women-and-children-fashion {
+    background-color: var(--color-secondary);
+    padding: 2rem 1rem;
+    
+    .card-fashion {
+        position: relative;
+        margin: 1rem 0;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+            object-fit: cover;
+            transition: .3s all ease-in;
+
+               &:hover {
+                    cursor: pointer;
+                    transform: scaleX(1.03);
+                    transform: scaleY(1.03);
+                }
+        }
+        
+        .info-fashion {
+            position: absolute;
+            bottom: 50px;
+            left: 30px;
+
+            .title-fashion {
+                color: var(--color-primary);
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+            
+            .subtitle-fashion {
+                color: var(--color-primary-soft);
+                text-transform: uppercase;
+                font-size: 1.7rem;
+                font-weight: 600;
+            }
+            
+            .text-fashion {
+                color: var(--color-text);
+                font-size: 1rem;
+                font-weight: 400;
+                max-width: 250px;
+            }
+
+            a {
+                color: var(--color-secondary);
+                transition: .3s;
+                
+                &:hover {
+                    color: var(--color-error);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {  
+    .women-and-children-fashion {
+        padding: 3rem 10rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        height: 60vh;
+
+        .card-fashion {
+            position: relative;
+
+            img {
+                width: 800px;
+                height: 100%;
+            } 
+        }   
+
+        .info-fashion {
+            position: absolute;
+            bottom: 20px;
+
+            .title-fashion {
+                color: var(--color-primary);
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+            
+            .subtitle-fashion {
+                color: var(--color-primary-soft);
+                text-transform: uppercase;
+                font-size: 1.7rem;
+                font-weight: 600;
+            }
+            
+            .text-fashion {
+                color: var(--color-text);
+                font-size: 1rem;
+                font-weight: 400;
+                max-width: 250px;
+            }
+
+            a {
+                color: var(--color-secondary);
+                transition: .3s;
+                
+                &:hover {
+                    color: var(--color-error);
+                }
+            }
+        }
+    }
+}
