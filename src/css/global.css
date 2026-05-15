@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--color-primary-soft);
+}
+
 :root {
     /* Cores principais */
     --color-bg: #19253B;          /* Fundo geral escuro */
@@ -59,18 +63,22 @@
 
 h1, h2 {
     font-family: var(--font-fredoka);
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
 h3, h4 {
     font-family: var(--font-lexend);
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
 p {
     font-family: var(--font-fredoka);
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 a {
     font-family: var(--font-lexend);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     text-decoration: none;
 }
 .title-main {
@@ -79,31 +87,40 @@ a {
     flex-direction: column;
     gap: .5rem;
     margin: 1rem 0;
-
+    padding: 1rem 1rem;
+    
+    
     .title {
         font-size: 1.5rem;
         text-transform: uppercase;
     }
-
+    
     .subtitle {
         font-size: 1rem;
         color: var(--color-secondary);
+        width: 300px;
     }
 }
 
 li {
     list-style: none;
 }
+
 .btn-nav-section { 
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--color-secondary);
     color: var(--color-primary-soft);
-    margin-bottom: 2rem;
     transition: .3s;
 
-    &:hover {
+        background-color: #eb0b34;
+        box-shadow: var(--shadow-soft);
+
+}  
+
+@keyframes viewBtn {
+    from {
         background-color: #eb0b34;
         box-shadow: var(--shadow-soft);
     }
-}  
+}

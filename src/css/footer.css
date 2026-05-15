@@ -84,10 +84,10 @@ footer {
             text-align: center;
             margin-top: 1rem;
 
-            &:hover {
+        
                 box-shadow: var(--shadow-soft);
                 cursor: pointer;
-            }
+  
 
             a {
                 color: var(--color-text);

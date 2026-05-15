@@ -41,14 +41,15 @@
         }
         
         .personalize-nav {
-            width: 50%;
+            width: 70%;
             text-align: center;   
             margin: 1rem 0;
             color: var(--color-secondary);
             transition: .3s;
             background-color: var(--color-bg);
-            padding: 1rem; 
+            padding: 1rem;
             border-radius: 1rem;
+            
             &:hover {
                 box-shadow: var(--shadow-soft);
             }

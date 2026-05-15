@@ -1,5 +1,6 @@
 .nba-and-nfl {
-    padding: 1rem 1rem;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .card-demo {
@@ -84,7 +85,8 @@
 
 @media (min-width: 1024px) { 
     .nba-and-nfl {
-        padding: 2rem 10rem;
+        width: 80%;
+        margin: 0 auto;
     }
 
 
@@ -92,14 +94,13 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         align-items: center;
-        height: 100%;
-        width: 100%;
 
         .card-demo {
             img {
-                width: 70%;
+                width: 95%;
                 height: 115vh;
                 object-fit: cover;
+                margin-bottom: 2rem;
             }
 
             .demo-info {

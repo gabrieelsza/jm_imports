@@ -1,5 +1,6 @@
 .what-differentiators {
-    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
 
     .cards-differentiators {
         display: flex;
@@ -36,6 +37,20 @@
                 max-width: 300px;
             }
         }
+    }
+}
+
+.card-differentiators {
+    animation: cardSurged;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes cardSurged {
+    from {
+        opacity: 0;
+        scale: .5;
+        transform: translateX(200px);
     }
 }
 

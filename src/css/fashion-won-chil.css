@@ -10,6 +10,7 @@
             width: 100%;
             border-radius: 1rem;
             object-fit: cover;
+            background-size: cover;
             transition: .3s all ease-in;
 
                &:hover {
@@ -17,6 +18,8 @@
                     transform: scaleX(1.03);
                     transform: scaleY(1.03);
                 }
+
+                
         }
         
         .info-fashion {
