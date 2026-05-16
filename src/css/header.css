@@ -17,14 +17,14 @@ header {
             gap: 1rem;
 
             img {
-                width: 20px;
-                height: 24px;
+                width: calc(20px, 3vw, 30px);
+                height: calc(20px, 3vw, 30px);
             }
 
             h1 {
                 color: var(--color-text);
-                font-size: 1.2rem;
                 text-transform: uppercase;
+                min-width: 200px;
             } 
         }
 
@@ -149,17 +149,13 @@ header {
 
         nav {
             background-color: transparent;
-            padding: 2rem 10rem;
+            padding: 2rem 5rem;
 
             .logo {
                 img {
                     width: 40px;
                     height: 44px;
                 }
-
-                h1 {
-                    font-size: 2rem;
-                } 
             }
 
             .nav-list-header {

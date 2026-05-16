@@ -1,0 +1,253 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+
+    .shirts {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .shirt-select {
+            width: 100%;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+
+        .other-shirts {
+            ul {
+                display: flex;
+                gap: .5rem;
+            }
+
+            img {
+                width: clamp(80px, 3vw, 100px);
+                height: clamp(100px, 3vw, 120px);
+                border-radius: .5rem;
+                object-fit: cover;
+            }
+
+            .select {
+                border: 2px solid var(--color-secondary);
+            }
+        }
+
+
+    }
+
+    .shirt-info {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .title {
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+
+        .name-shirt {
+            color: var(--color-bg);
+        }
+
+        .price-shirt {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            font-family: var(--font-lexend);
+
+            .price-actualy {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 800;
+            }
+            
+            .price-discount {
+                font-size: 1.2rem;
+                color: var(--color-text-muted);
+                text-decoration: line-through;
+            }
+        }
+
+        .desciption-shirt {
+            font-size: 1rem;
+        }
+
+        .shirts-sizes {
+            display: flex;
+            gap: .5rem;
+            overflow: hidden;
+            margin-top: 1rem;
+
+            
+            li {
+                color: var(--color-bg);
+                font-size: .5rem;
+                text-transform: uppercase;
+                border: 1px solid var(--color-text-muted);
+                padding: .4rem .8rem;
+                border-radius: .3rem;
+            }
+            
+            .select {
+                border: 2px solid var(--color-secondary);
+                color: var(--color-secondary-soft);
+            }
+
+        }
+
+        .btn-shirts {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--color-bg);
+
+            .add-car {
+                padding: 1rem;
+                text-align: center;
+                background-color: var(--color-secondary);
+                border-radius: .5rem;
+                
+                a {
+                    color: var(--color-primary-soft);
+                    text-transform: uppercase;
+                    font-size: .8rem;
+                    font-weight: 600;
+                }
+            }
+
+            .continue-store {
+                padding: 1rem;
+                text-align: center;
+                border-radius: .5rem;
+                border: 1px solid var(--color-bg);
+                transition: .3s ease-in;
+
+                
+                a {
+                    color: var(--color-bg);
+                    text-transform: uppercase;
+                    font-size: .8rem;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    background-color: var(--color-bg);
+                    color: var(--color-primary-soft);
+                }
+            }
+        }
+
+        .technical-specifications {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+
+            .cards-specifications {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .card-specifications {
+                    background-color: var(--color-text);
+                    border-radius: 1rem;
+                    padding: 1rem;
+
+                    .title-card {
+                        color: var(--color-text-muted);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        font-size: .8rem;
+                        margin-bottom: .8rem;
+                    }
+
+                    .technical-specifications-text {
+                        font-weight: 600;
+                        color: var(--color-bg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-sec {
+    font-weight: 600;
+    font-family: var(--font-lexend);
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+@media (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        align-items: start;
+        gap: 0;
+
+        .shirts {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            object-fit: cover;
+
+            .shirt-select {
+                width: 100%;
+
+                img {
+                    width: 80%;
+                    border-radius: 1rem;
+                }
+            }
+        }
+
+        .shirt-info {
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .technical-specifications {
+                gap: 1rem;
+                
+                .cards-specifications {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(50%, 50%));
+                    gap: 1rem;
+
+                    .card-specifications {
+                        background-color: var(--color-text);
+                        border-radius: 1rem;
+                        padding: 1rem;
+
+                        .title-card {
+                            color: var(--color-text-muted);
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: .8rem;
+                            margin-bottom: .8rem;
+                        }
+
+                        .technical-specifications-text {
+                            font-weight: 600;
+                            font-size: 1rem;
+                            color: var(--color-bg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

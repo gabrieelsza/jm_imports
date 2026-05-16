@@ -68,21 +68,21 @@ h1, h2 {
 
 h3, h4 {
     font-family: var(--font-lexend);
-    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 p {
     font-family: var(--font-fredoka);
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 a {
     font-family: var(--font-lexend);
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(1.2rem, 2vw, 1rem);
     text-decoration: none;
 }
 .title-main {
-    max-width: 320px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -91,14 +91,13 @@ a {
     
     
     .title {
-        font-size: 1.5rem;
         text-transform: uppercase;
     }
     
     .subtitle {
         font-size: 1rem;
         color: var(--color-secondary);
-        width: 300px;
+        width: 350px;
     }
 }
 

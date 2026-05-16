@@ -1,0 +1,113 @@
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                width: calc(20px, 3vw, 30px);
+                height: calc(20px, 3vw, 30px);
+            }
+
+            h1 {
+                color: var(--color-bg);
+                text-transform: uppercase;
+                min-width: 200px;
+            } 
+        }
+
+        .nav-list-header {
+            display: none;
+        }
+
+        .nav-icones-mobile {
+            font-size: 1.2rem;
+            color: var(--color-bg);
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            
+            button {
+                background: transparent;
+                border: none;
+                font-size: 1.2rem;
+                color: var(--color-bg);
+                outline: none;
+            }
+        }
+        
+        .nav-icones-desktop {
+            display: none;
+        }
+    }
+}
+
+.catalogo {
+    padding: 3rem 12rem;
+    background-color: var(--color-bg);
+
+        h5 {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: var(--font-fredoka);
+            color: var(--color-primary-soft);
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-weight: 300;
+            font-family: var(--font-fredoka);
+            color: var(--color-primary-soft);
+
+        }
+}
+
+@media (min-width: 768px) {
+
+}
+
+/* Desktop: a partir de 1024px */
+@media (min-width: 1024px) {
+    header {
+        nav {
+            background-color: transparent;
+            padding: 2rem 12rem;
+
+            .logo {
+                img {
+                    width: 40px;
+                    height: 44px;
+                }
+            }
+
+            .nav-list-header {
+                display: flex;
+                gap: 2rem;
+
+                a {
+                    color: var(--color-text);
+                }
+            }
+            
+            .nav-icones-mobile {
+                display: none;
+            }
+            
+            .nav-icones-desktop {
+                color: var(--color-text);
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+
+
+/* grid-template-columns: repeat(3, minmax(0, 1fr)); */
