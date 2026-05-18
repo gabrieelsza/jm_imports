@@ -49,7 +49,8 @@ header {
 }
 
 .catalogo {
-    padding: 3rem 12rem;
+    width: 100%;
+    padding: 3% 12%;
     background-color: var(--color-bg);
 
         h5 {
