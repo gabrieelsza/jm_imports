@@ -1,5 +1,5 @@
 header {
-    background: url(image/background-header.png);
+    background: url("/src/image/background-header.png");
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
