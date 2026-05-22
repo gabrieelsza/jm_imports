@@ -1,0 +1,160 @@
+.releases {
+    background-color: var(--color-bg);
+    
+    .title-main {
+        color: var(--color-primary-soft);
+    }
+
+    .cards-shirts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10%, 45%));
+        gap: 1rem;
+        margin-top: 2rem;
+        justify-content: center ;
+
+        .card-shirt {
+            background-color: var(--color-text);
+            border-radius: .5rem;
+        
+            img {
+                border-radius: .5rem .5rem 0 0 ;
+                width: 100%;
+                object-fit: cover;
+                transition: .3s all ease;
+                
+                animation: zoomShirt;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                    /* margin-top: .5rem; */
+                }
+            }
+            
+            .info-shirt {
+                max-width: 100%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+                .category-shirt {
+                    text-transform: uppercase;
+                    color: var(#ccc);
+                    font-weight: 300;
+                }   
+
+                .about-shirt {
+                    max-width: 150px;
+                    flex-wrap: wrap;
+                    font-size: 1rem;
+                }
+
+                .price-shirt {
+                    display: flex;
+                    gap: 1rem;
+
+                    .discount {
+                        color: var(--color-text-muted);
+                        text-decoration: line-through;
+                    }
+                }
+
+                .shirt-sizes {
+                    max-width: 100%;
+                    display: flex;
+                    gap: .5rem;
+                    overflow: hidden;
+
+                    li {
+                        color: var(--color-text-muted);
+                        font-size: .5rem;
+                        text-transform: uppercase;
+                        border: 1px solid var(--color-text-muted);
+                        padding: .2rem .4rem;
+                        border-radius: .5rem;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .nav-section {
+        text-align: center;
+        height: 15vh;
+        
+        p {
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: var(--color-primary-soft);
+            margin: 3rem 0;
+        } 
+
+        a {
+            margin: 2rem 0;
+            
+
+            animation: btnZoom;
+            animation-timeline: view();
+            animation-range: entry 0% cover 10%;
+        }
+    }
+}
+
+@keyframes zoomShirt{
+    from {
+        scale: 0.5;
+    }
+
+    to {
+        scale: 1;
+    }
+
+}
+
+@keyframes btnZoom{
+    from {
+        scale: 0.5;
+    }
+
+    to {
+        scale: 1;
+    }
+
+}
+
+@media (min-width: 1024px) { 
+    .releases {
+        width: 100%;
+
+        .title-main {
+            padding: 2rem 10%;
+        }
+        
+        .cards-shirts {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem; 
+
+            
+            .card-shirt {
+                min-width: 24%;
+                max-width: 24.1%;
+                
+                img {
+                    object-fit: cover;
+                }
+            }
+        }  
+    }
+}

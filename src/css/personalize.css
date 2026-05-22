@@ -1,0 +1,89 @@
+.personalize {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;    
+    margin: 3rem 0;
+    
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0 0 1rem 1rem;
+    }
+    
+    .info-personalize {
+        border-radius: 1rem 1rem 0 0;
+        background-color: var(--color-primary);
+        padding: 1rem 2rem;
+        
+        .title-personalize {
+            color: var(--color-bg);
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+        
+        .subtitle-personalize {
+            margin: 1rem 0;
+            max-width: 200px;
+            color: var(--color-bg);
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        .text-personalize {
+            margin: 1rem 0;
+            color: var(--color-bg);
+            font-size: 1rem;
+            font-weight: 400;
+            max-width: 300px;
+        }
+        
+        .personalize-nav {
+            width: 70%;
+            text-align: center;   
+            margin: 1rem 0;
+            color: var(--color-secondary);
+            transition: .3s;
+            background-color: var(--color-bg);
+            padding: 1rem;
+            border-radius: 1rem;
+            
+            &:hover {
+                box-shadow: var(--shadow-soft);
+            }
+
+            a {
+                color: var(--color-text);
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {  
+    .personalize {
+        padding: 2rem 10rem;
+        flex-direction: row;    
+        width: 100%;
+        justify-content: center;
+        
+        .info-personalize {
+            width: 40%;
+            border-radius: 1rem 0 0 1rem;
+
+            .title-personalize {
+                margin: 4rem 0;
+            }
+            
+            .text-personalize {
+                margin: 1rem 0 3rem 0;
+            }
+        }
+
+        img {
+            width: 40%;
+            border-radius: 0 1rem 1rem 0;
+        }
+    }
+}
