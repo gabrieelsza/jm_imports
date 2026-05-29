@@ -127,5 +127,5 @@ li {
 }
 
 header {
-     background: url("/src/image/background-header.png");
+     background: url("./src/image/background-header.png");
 }
