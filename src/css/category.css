@@ -1,10 +1,11 @@
-.category {
+.category { 
+    padding: 1rem 0;
 
     .category-cards {
         display: grid;
         grid-template-columns: repeat(2, minmax(10%, 45%));
         gap: 1rem;
-        margin-top: 2rem;
+        margin: 3rem 0;
         justify-content: center;
 
 
@@ -49,12 +50,12 @@
 @media (min-width: 1024px) { 
     .category {
         width: 80%;
-        margin: 0 auto;
         overflow: hidden;
+        margin: 0 auto;
         
         .category-cards {
             display: flex;
-            margin-top: 2rem;
+            margin: 5rem auto;
             justify-content: space-between;
 
             .card-category {

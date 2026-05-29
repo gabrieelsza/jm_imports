@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +75,6 @@ h3, h4 {
 
 p {
     font-family: var(--font-fredoka);
-    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 a {
@@ -81,6 +82,7 @@ a {
     font-size: clamp(1.2rem, 2vw, 1rem);
     text-decoration: none;
 }
+
 .title-main {
     min-width: 350px;
     display: flex;
@@ -122,4 +124,8 @@ li {
         background-color: #eb0b34;
         box-shadow: var(--shadow-soft);
     }
+}
+
+header {
+     background: url("/src/image/background-header.png");
 }

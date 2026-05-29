@@ -18,11 +18,12 @@ header {
             h1 {
                 color: var(--color-bg);
                 text-transform: uppercase;
-                min-width: 200px;
+                font-size: 2rem;
+                font-family: var(--font-fredoka);
             } 
         }
         
-        ul {
+        .nav-list-header {
             display: none;
             flex-direction: column;
             position: absolute;
@@ -99,7 +100,8 @@ header {
     header {
         nav {
             background-color: transparent;
-            padding: 2rem 12rem;
+            padding: 2rem 12rem;   
+            align-items: center;
 
             .logo {
                 img {
@@ -109,11 +111,14 @@ header {
             }
 
             .nav-list-header {
-                display: flex;
+                flex-direction: row;
                 gap: 2rem;
+                align-items: center;
+                background-color: transparent;
+                display: none;
 
                 a {
-                    color: var(--color-text);
+                    color: var(--color-bg);
                 }
             }
             
@@ -122,14 +127,11 @@ header {
             }
             
             .nav-icones-desktop {
-                color: var(--color-text);
                 display: flex;
+                color: var(--color-bg);
                 gap: 1rem;
+                font-size: 2rem;
             }
         }
     }
 }
-
-
-
-/* grid-template-columns: repeat(3, minmax(0, 1fr)); */

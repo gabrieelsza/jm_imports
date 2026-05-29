@@ -42,12 +42,12 @@
         width: 100%;
         border-radius: 1rem 1rem 0 0 ;
         object-fit: cover;
-        transition: .3s all ease-in;
+        transition: .8s all ease;
+        transform: scale(0.9);
         
         &:hover {
             cursor: pointer;
-            transform: scaleX(1.03);
-            transform: scaleY(1.03);
+            transform: scale(1.0);
         }
     }
 
@@ -123,13 +123,6 @@
             height: 330px;
             border-radius: 1rem 1rem 0 0 ;
             object-fit: cover;
-            transition: .3s all ease-in;
-            
-            &:hover {
-                cursor: pointer;
-                transform: scaleX(1.03);
-                transform: scaleY(1.03);
-            }
         }
 
         .info-sale {

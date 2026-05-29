@@ -11,12 +11,11 @@
             border-radius: 1rem;
             object-fit: cover;
             background-size: cover;
-            transition: .3s all ease-in;
+            transition: .8s all ease;
 
                &:hover {
                     cursor: pointer;
-                    transform: scaleX(1.03);
-                    transform: scaleY(1.03);
+                    transform: scale(1.01);
                 }
 
                 
