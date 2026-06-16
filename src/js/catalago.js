@@ -63,10 +63,15 @@ async function carregarCategorias() {
         const categories = await resposta.json();
         
         const categoria = document.querySelector('.title-category');
+
+        const categoriasUnicas = categories.filter((category, index, array) => {
+             return index === array.findIndex(item => item.categoria === category.categoria);
+        });
         
-        categories.forEach((category) => {
+        categoriasUnicas.forEach((category) => {
             const coluna = document.createElement('div');
             coluna.classList.add('category-disponible');
+            const categoriaExistente = category.categoria;
             
             coluna.innerHTML = `
                 <button href="#" class="btn-categoria" data-filter-type="categoria" data-filter-value="Edição estadio"> ${category.categoria} </button>
@@ -96,8 +101,10 @@ async function carregarTimes() {
             coluna.innerHTML = `
                 <button href="#" class="btn-categoria" data-filter-type="categoria" data-filter-value="Edição estadio"> ${time.time} </button>
             `;
-            
-            colunmTime.appendChild(coluna);
+
+            if( time != time.categoria ) {
+                colunmTime.appendChild(coluna);
+            }            
         });
     } catch (erro) {
         console.error('Erro ao carregar camisetas:', erro);
