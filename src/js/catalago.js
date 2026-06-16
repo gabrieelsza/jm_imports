@@ -1,7 +1,7 @@
 // CLASS = SELECT 
 async function carregarCamisetas() {
     try {
-        const resposta = await fetch('/camisetas.json');
+        const resposta = await fetch('./camisetas.json');
         const camisetas = await resposta.json();
 
         const grid = document.querySelector('.cards-shirts');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', carregarCamisetas);
 
 async function carregarCategorias() {
     try {
-        const resposta = await fetch('/camisetas.json');
+        const resposta = await fetch('./camisetas.json');
         const categories = await resposta.json();
         
         const categoria = document.querySelector('.title-category');
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', carregarCategorias);
 
 async function carregarTimes() {
     try {
-        const resposta = await fetch('/camisetas.json');
+        const resposta = await fetch('./camisetas.json');
         const times = await resposta.json();
         
         const colunmTime = document.querySelector('.time');
