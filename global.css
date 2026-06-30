@@ -18,7 +18,8 @@ body {
 
     --color-primary: #EDAC2D;     /* Amarelo destaque (CTA, links principais) */
     --color-primary-dark: #c79d10;
-    --color-primary-soft: #FCF6E4;
+    --color-primary-soft: #fcf5e4
+;
 
     --color-secondary: #E3143B;   /* Vermelho/rosa (lancamentos, alertas sutis) */
     --color-secondary-soft: #3b1120;
@@ -30,7 +31,9 @@ body {
     --color-text-muted: #9ca3af;  /* Texto secundário */
     --color-text-soft: #6b7280;   /* Legendas, labels */
     --color-border: #272738;      /* Bordas discretas */
-
+    --color-deitals: #19253b80
+;
+    
     /* Feedback */
     --color-success: #16a34a;
     --color-warning: #facc15;

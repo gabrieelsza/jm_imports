@@ -7,9 +7,14 @@
     "categoria": "Futebol",
     "tamanho": ["P", "M", "G", "GG"],
     "preco": 199.9,
+    "discount": 289.9,
     "estoque": 12,
-    "tipo": "Oficial réplica",
-    "imagem": "./src/image/shirt-tree-removebg-preview.png"
+    "tipo": "Edição estadio",
+    "imagem":{
+        "frente": "./src/image/shirt-red-frente.jpg", 
+       "verso": "./src/image/shirt-red-verso.jpg", 
+      "zoom": "./src/image/shirt-red-zoom.jpg"
+    }
 },
 {
     "id": 2,
@@ -19,9 +24,14 @@
     "categoria": "Edição estadio",
     "tamanho": ["M", "G"],
     "preco": 179.9,
+    "discount": 289.9,
     "estoque": 7,
-    "tipo": "Retrô",
-    "imagem": "./src/image/shirt-botafogo.jpg"
+    "tipo": "Edição estadio", 
+    "imagem":{
+        "frente": "./src/image/shirt-botafogo.jpg", 
+        "verso": "./src/image/shirt-red-verso.jpg", 
+        "zoom": "./src/image/shirt-red-zoom.jpg"
+    }
 },
 {
     "id": 3,
@@ -31,9 +41,14 @@
     "categoria": "Futebol",
     "tamanho": ["P", "M", "G"],
     "preco": 219.9,
+    "discount": 289.9,
     "estoque": 10,
-    "tipo": "Oficial réplica",
-    "imagem": "./src/image/shirt-roma.jpg"
+    "tipo": "Edição estadio",
+    "imagem":{
+        "frente": "./src/image/shirt-botafogo.jpg", 
+        "verso": "./src/image/shirt-red-verso.jpg", 
+        "zoom": "./src/image/shirt-red-zoom.jpg"
+    }
 }, 
 {
     "id": 4,
@@ -43,9 +58,14 @@
     "categoria": "Futebol",
     "tamanho": ["M", "G", "GG"],
     "preco": 219.9,
+    "discount": 289.9,
     "estoque": 8,
-    "tipo": "Oficial réplica",
-    "imagem": "./src/image/shirt-two-removebg-preview.png"
+    "tipo": "Third Kit",
+    "imagem": {
+        "frente": "./src/image/shirt-botafogo.jpg", 
+       "verso": "./src/image/shirt-two-removebg-preview.png", 
+      "zoom": "./src/image/shirt-two-removebg-preview.png"
+    }
 },
 {
     "id": 5,
@@ -55,9 +75,14 @@
     "categoria": "Futebol",
     "tamanho": ["P", "M", "G", "GG"],
     "preco": 209.9,
+    "discount": 289.9,
     "estoque": 9,
-    "tipo": "Oficial réplica",
-    "imagem": "./src/image/shirt-cruzeiro.jpg"
+    "tipo": "Third Kit",
+     "imagem":{
+        "frente": "./src/image/shirt-botafogo.jpg", 
+        "verso": "./src/image/shirt-red-verso.jpg", 
+        "zoom": "./src/image/shirt-red-zoom.jpg"
+    }
 },
 {
     "id": 6,
@@ -67,9 +92,14 @@
     "categoria": "NBA",
     "tamanho": ["P", "M", "G"],
     "preco": 189.9,
+    "discount": 289.9,
     "estoque": 6,
-    "tipo": "Jersey NBA",
-    "imagem": "./src/image/shirt-city.jpg"
+    "tipo": "Third Kit",
+     "imagem":{
+        "frente": "./src/image/shirt-botafogo.jpg", 
+        "verso": "./src/image/shirt-red-verso.jpg", 
+        "zoom": "./src/image/shirt-red-zoom.jpg"
+    }
 },
 {
     "id": 7,
@@ -79,9 +109,14 @@
     "categoria": "NBA retrô",
     "tamanho": ["M", "G", "GG"],
     "preco": 199.9,
+    "discount": 289.9,
     "estoque": 5,
-    "tipo": "Jersey retrô",
-    "imagem": "./src/image/shirt-removebg-preview.png"
+    "tipo": "Torcedor",
+    "imagem":{
+        "frente": "./src/image/shirt-botafogo.jpg", 
+        "verso": "./src/image/shirt-red-verso.jpg", 
+        "zoom": "./src/image/shirt-red-zoom.jpg"
+    }
 },
 {
     "id": 8,
@@ -91,8 +126,13 @@
     "categoria": "NFL",
     "tamanho": ["P", "M", "G"],
     "preco": 219.9,
+    "discount": 289.9,
     "estoque": 4,
-    "tipo": "Jersey NFL",
-    "imagem": "./src/image/shirt-one-removebg-preview.png"
+    "tipo": "Torcedor",
+    "imagem":{
+        "frente": "./src/image/shirt-botafogo.jpg", 
+        "verso": "./src/image/shirt-red-verso.jpg", 
+        "zoom": "./src/image/shirt-red-zoom.jpg"
+    }
   }
 ]

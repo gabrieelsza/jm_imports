@@ -18,26 +18,38 @@ main {
             margin: 0 auto;
 
             img {
-                width: 100%;
+                max-width: 100%;
                 border-radius: 1rem;
             }
         }
 
         .other-shirts {
+            width: clamp(80px, 3vw, 100px);
+            height: clamp(100px, 3vw, 120px);            
+            
             ul {
                 display: flex;
                 gap: .5rem;
-            }
+                
+                li.select {
+                    border: 2px solid var(--color-secondary);
+                    border-radius: .5rem;
+                }
+                
+                .select {
+                    height: clamp(104px, 3vw, 120px);            
+                    width: clamp(90px, 3vw, 100px);
+                    border: 2px solid var(--color-secondary);
+                    border-radius: .5rem;
+                }
 
+            }
+            
             img {
                 width: clamp(80px, 3vw, 100px);
-                height: clamp(100px, 3vw, 120px);
+                height: clamp(100px, 3vw, 120px);            
                 border-radius: .5rem;
                 object-fit: cover;
-            }
-
-            .select {
-                border: 2px solid var(--color-secondary);
             }
         }
 
@@ -207,7 +219,8 @@ main {
                 width: 100%;
 
                 img {
-                    width: 80%;
+                    min-width: 50%;
+                    max-width: 55%;
                     border-radius: 1rem;
                 }
             }
