@@ -15,11 +15,27 @@ const btnFilter = document.querySelector("#btn-filter");
 const navFilter = document.querySelector(".nav-filter");
 const navFilterMobile = document.querySelector(".nav-filter-mobile");
 
-btnFilter.addEventListener("click", () => {
-    console.log("Clicou")
-    navFilter.classList.toggle("show");
-    navFilterMobile.classList.toggle("show");
-});
+function configurarFiltroResponsivo() {
+    const largura = window.innerWidth;
+    const mobileDevices = largura <= 1024;
+
+    // remove qualquer listener antigo
+    btnFilter.replaceWith(btnFilter.cloneNode(true));
+    const novoBtnFilter = document.querySelector('#btn-filter');
+
+    if (mobileDevices) {
+        novoBtnFilter.addEventListener("click", () => {
+            console.log("Clicou (mobile/tablet)");
+            navFilter.classList.toggle("show");
+            navFilterMobile.classList.toggle("show");
+        });
+    }
+}
+
+// roda ao carregar
+window.addEventListener('load', configurarFiltroResponsivo);
+// roda ao redimensionar
+window.addEventListener('resize', configurarFiltroResponsivo);
 
 async function gerarShirts() {
     try {

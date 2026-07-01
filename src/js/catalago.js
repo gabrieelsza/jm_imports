@@ -79,7 +79,7 @@ async function shirtsWithCategory() {
                             card.classList.add('card-shirt');
 
                             card.innerHTML = `
-                                <img src="${camiseta}" alt=" Camiseta">
+                                <img src="${camiseta.imagem.frente}" alt=" Camiseta">
                                         <div class="info-shirt">
                                             <p class="category-shirt">
                                                 ${camiseta.liga}
