@@ -17,8 +17,8 @@
         "tipo": "Retrô classico",
         "imagem": {
             "frente": "./src/image/botafogo-frente.jpg",
-            "verso": "./src/image/botafogo-verso.jpg",
-            "zoom": "./src/image/botafogo-zoom.jpg"
+            "verso": "./src/image/botafogo-verso.png",
+            "zoom": "./src/image/botafogo-zoom.png"
         }
     },
     {
@@ -82,8 +82,8 @@
         "tipo": "Third Kit",
         "imagem": {
             "frente": "./src/image/cruzeiro-frente.jpg",
-            "verso": "./src/image/cruzeiro-verso.jpg",
-            "zoom": "./src/image/cruzeiro-zoom.jpg"
+            "verso": "./src/image/cruzeiro-verso.png",
+            "zoom": "./src/image/cruzeiro-zoom.png"
         }
     },
     {
@@ -191,8 +191,8 @@
         "tipo": "Treino Streat",
         "imagem": {
             "frente": "./src/image/saopaulo-frente.jpg",
-            "verso": "./src/image/saopaulo-verso.jpg",
-            "zoom": "./src/image/saopaulo-zoom.jpg"
+            "verso": "./src/image/saopaulo-verso.png",
+            "zoom": "./src/image/saopaulo-zoom.png"
         }
     },
     {
@@ -234,8 +234,8 @@
         "tipo": "Retrô classico",
         "imagem": {
             "frente": "./src/image/roma-frente.jpg",
-            "verso": "./src/image/roma-verso.jpg",
-            "zoom": "./src/image/roma-zoom.jpg"
+            "verso": "./src/image/roma-verso.png",
+            "zoom": "./src/image/roma-zoom.png"
         }
     },
     {
