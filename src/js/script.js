@@ -17,7 +17,7 @@ const navFilterMobile = document.querySelector(".nav-filter-mobile");
 
 function configurarFiltroResponsivo() {
     const largura = window.innerWidth;
-    const mobileDevices = largura <= 1024;
+    const mobileDevices = largura < 1024;
 
     // remove qualquer listener antigo
     const novoBtnFilter = document.querySelector('#btn-filter');
@@ -25,7 +25,7 @@ function configurarFiltroResponsivo() {
     if (mobileDevices) {
         novoBtnFilter.addEventListener("click", () => {
             console.log("Clicou (mobile/tablet)");
-            navFilter.classList.toggle("show");
+            navFilter.classList.toggle("show"); 
             navFilterMobile.classList.toggle("show");
         });
     }
