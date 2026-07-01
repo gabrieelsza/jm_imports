@@ -20,7 +20,6 @@ function configurarFiltroResponsivo() {
     const mobileDevices = largura <= 1024;
 
     // remove qualquer listener antigo
-    btnFilter.replaceWith(btnFilter.cloneNode(true));
     const novoBtnFilter = document.querySelector('#btn-filter');
 
     if (mobileDevices) {
@@ -30,6 +29,7 @@ function configurarFiltroResponsivo() {
             navFilterMobile.classList.toggle("show");
         });
     }
+    
 }
 
 // roda ao carregar

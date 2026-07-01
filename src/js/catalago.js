@@ -128,6 +128,15 @@ async function shirtsWithCategory() {
 
 shirtsWithCategory(); 
 
+const clearFilterMobile = document.querySelector(".clear-filter"); 
+
+clearFilterMobile.addEventListener("click", (e) => {
+    console.log(
+        "Clicou"
+    )
+    carregarCamisetas()
+})
+
 async function shirtsWithCategoryMobile() {
     const category = document.querySelectorAll(".btn-nav-filter button"); 
     

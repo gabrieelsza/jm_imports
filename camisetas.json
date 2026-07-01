@@ -1,138 +1,263 @@
 [
-  {
-    "id": 1,
-    "nome": "Camisa Flamengo 24/25 Titular",
-    "liga": "Brasileirão",
-    "time": "Flamengo",
-    "categoria": "Futebol",
-    "tamanho": ["P", "M", "G", "GG"],
-    "preco": 199.9,
-    "discount": 289.9,
-    "estoque": 12,
-    "tipo": "Edição estadio",
-    "imagem":{
-        "frente": "./src/image/shirt-red-frente.jpg", 
-       "verso": "./src/image/shirt-red-verso.jpg", 
-      "zoom": "./src/image/shirt-red-zoom.jpg"
+    {
+        "id": 1,
+        "nome": "Camisa Botafogo 24/25 Titular",
+        "liga": "Brasileirão",
+        "time": "Botafogo",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 299.9,
+        "discount": 359.9,
+        "estoque": 7,
+        "tipo": "Retrô classico",
+        "imagem": {
+            "frente": "./src/image/botafogo-frente.jpg",
+            "verso": "./src/image/botafogo-verso.jpg",
+            "zoom": "./src/image/botafogo-zoom.jpg"
+        }
+    },
+    {
+        "id": 2,
+        "nome": "Camisa Bayer Leverkusen 24/25 Titular",
+        "liga": "Bundesliga",
+        "time": "Bayer Leverkusen",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 379.9,
+        "discount": 449.9,
+        "estoque": 7,
+        "tipo": "Third Kit",
+        "imagem": {
+            "frente": "./src/image/leverkusen-frente.jpg",
+            "verso": "./src/image/leverkusen-verso.jpg",
+            "zoom": "./src/image/leverkusen-zoom.jpg"
+        }
+    },
+    {
+        "id": 3,
+        "nome": "Camisa Japão 24/25 Titular",
+        "liga": "Seleções",
+        "time": "Japão",
+        "categoria": "Seleções",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 369.9,
+        "discount": 429.9,
+        "estoque": 8,
+        "tipo": "Treino Streat",
+        "imagem": {
+            "frente": "./src/image/japao-frente.png",
+            "verso": "./src/image/japao-verso.png",
+            "zoom": "./src/image/japao-zoom.png"
+        }
+    },
+    {
+        "id": 4,
+        "nome": "Camisa Cruzeiro 24/25 Titular",
+        "liga": "Brasileirão",
+        "time": "Cruzeiro",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G"
+        ],
+        "preco": 289.9,
+        "discount": 349.9,
+        "estoque": 6,
+        "tipo": "Third Kit",
+        "imagem": {
+            "frente": "./src/image/cruzeiro-frente.jpg",
+            "verso": "./src/image/cruzeiro-verso.jpg",
+            "zoom": "./src/image/cruzeiro-zoom.jpg"
+        }
+    },
+    {
+        "id": 5,
+        "nome": "Camisa Argentina 24/25 Titular",
+        "liga": "Seleções",
+        "time": "Argentina",
+        "categoria": "Seleções",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 349.9,
+        "discount": 399.9,
+        "estoque": 12,
+        "tipo": "Edição estadio",
+        "imagem": {
+            "frente": "./src/image/argentina-frente.jpg",
+            "verso": "./src/image/argentina-verso.jpg",
+            "zoom": "./src/image/argentina-zoom.jpg"
+        }
+    },
+    {
+        "id": 6,
+        "nome": "Camisa Palmeiras 24/25 Titular",
+        "liga": "Brasileirão",
+        "time": "Palmeiras",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 329.9,
+        "discount": 399.9,
+        "estoque": 11,
+        "tipo": "Edição estadio",
+        "imagem": {
+            "frente": "./src/image/palmeiras-frente.jpg",
+            "verso": "./src/image/palmeiras-verso.jpg",
+            "zoom": "./src/image/palmeiras-zoom.jpg"
+        }
+    },
+    {
+        "id": 7,
+        "nome": "Camisa Flamengo 24/25 Titular",
+        "liga": "Brasileirão",
+        "time": "Flamengo",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 329.9,
+        "discount": 399.9,
+        "estoque": 13,
+        "tipo": "Torcedor",
+        "imagem": {
+            "frente": "./src/image/flamengo-frente.jpg",
+            "verso": "./src/image/flamengo-verso.jpg",
+            "zoom": "./src/image/flamengo-zoom.jpg"
+        }
+    },
+    {
+        "id": 8,
+        "nome": "Camisa Estados Unidos 24/25 Titular",
+        "liga": "Seleções",
+        "time": "Estados Unidos",
+        "categoria": "Seleções",
+        "tamanho": [
+            "P",
+            "M",
+            "G"
+        ],
+        "preco": 339.9,
+        "discount": 389.9,
+        "estoque": 9,
+        "tipo": "Third Kit",
+        "imagem": {
+            "frente": "./src/image/eua-frente.jpg",
+            "verso": "./src/image/eua-verso.jpg",
+            "zoom": "./src/image/eua-zoom.jpg"
+        }
+    },
+    {
+        "id": 9,
+        "nome": "Camisa São Paulo 24/25 Titular",
+        "liga": "Brasileirão",
+        "time": "São Paulo",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 309.9,
+        "discount": 379.9,
+        "estoque": 10,
+        "tipo": "Treino Streat",
+        "imagem": {
+            "frente": "./src/image/saopaulo-frente.jpg",
+            "verso": "./src/image/saopaulo-verso.jpg",
+            "zoom": "./src/image/saopaulo-zoom.jpg"
+        }
+    },
+    {
+        "id": 10,
+        "nome": "Camisa Manchester City 24/25 Titular",
+        "liga": "Premier League",
+        "time": "Manchester City",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 389.9,
+        "discount": 459.9,
+        "estoque": 9,
+        "tipo": "Edição estadio",
+        "imagem": {
+            "frente": "./src/image/mancity-frente.jpg",
+            "verso": "./src/image/mancity-verso.jpg",
+            "zoom": "./src/image/mancity-zoom.jpg"
+        }
+    },
+    {
+        "id": 11,
+        "nome": "Camisa Roma 24/25 Titular",
+        "liga": "Serie A",
+        "time": "Roma",
+        "categoria": "Futebol",
+        "tamanho": [
+            "P",
+            "M",
+            "G"
+        ],
+        "preco": 379.9,
+        "discount": 449.9,
+        "estoque": 8,
+        "tipo": "Retrô classico",
+        "imagem": {
+            "frente": "./src/image/roma-frente.jpg",
+            "verso": "./src/image/roma-verso.jpg",
+            "zoom": "./src/image/roma-zoom.jpg"
+        }
+    },
+    {
+        "id": 12,
+        "nome": "Camisa Brasil 24/25 Titular",
+        "liga": "Seleções",
+        "time": "Brasil",
+        "categoria": "Seleções",
+        "tamanho": [
+            "P",
+            "M",
+            "G",
+            "GG"
+        ],
+        "preco": 349.9,
+        "discount": 399.9,
+        "estoque": 10,
+        "tipo": "Torcedor",
+        "imagem": {
+            "frente": "./src/image/brasil-frente.jpg",
+            "verso": "./src/image/brasil-verso.jpg",
+            "zoom": "./src/image/brasil-zoom.jpg"
+        }
     }
-},
-{
-    "id": 2,
-    "nome": "Camisa Botafogo 23/24 Retrô",
-    "liga": "Brasileirão",
-    "time": "Corinthians",
-    "categoria": "Edição estadio",
-    "tamanho": ["M", "G"],
-    "preco": 179.9,
-    "discount": 289.9,
-    "estoque": 7,
-    "tipo": "Edição estadio", 
-    "imagem":{
-        "frente": "./src/image/shirt-botafogo.jpg", 
-        "verso": "./src/image/shirt-red-verso.jpg", 
-        "zoom": "./src/image/shirt-red-zoom.jpg"
-    }
-},
-{
-    "id": 3,
-    "nome": "Camisa Barcelona 24/25 Titular",
-    "liga": "La Liga",
-    "time": "Barcelona",
-    "categoria": "Futebol",
-    "tamanho": ["P", "M", "G"],
-    "preco": 219.9,
-    "discount": 289.9,
-    "estoque": 10,
-    "tipo": "Edição estadio",
-    "imagem":{
-        "frente": "./src/image/shirt-botafogo.jpg", 
-        "verso": "./src/image/shirt-red-verso.jpg", 
-        "zoom": "./src/image/shirt-red-zoom.jpg"
-    }
-}, 
-{
-    "id": 4,
-    "nome": "Camisa Real Madrid 24/25 Visitante",
-    "liga": "La Liga",
-    "time": "Real Madrid",
-    "categoria": "Futebol",
-    "tamanho": ["M", "G", "GG"],
-    "preco": 219.9,
-    "discount": 289.9,
-    "estoque": 8,
-    "tipo": "Third Kit",
-    "imagem": {
-        "frente": "./src/image/shirt-botafogo.jpg", 
-       "verso": "./src/image/shirt-two-removebg-preview.png", 
-      "zoom": "./src/image/shirt-two-removebg-preview.png"
-    }
-},
-{
-    "id": 5,
-    "nome": "Camisa PSG 23/24 Titular",
-    "liga": "Ligue 1",
-    "time": "PSG",
-    "categoria": "Futebol",
-    "tamanho": ["P", "M", "G", "GG"],
-    "preco": 209.9,
-    "discount": 289.9,
-    "estoque": 9,
-    "tipo": "Third Kit",
-     "imagem":{
-        "frente": "./src/image/shirt-botafogo.jpg", 
-        "verso": "./src/image/shirt-red-verso.jpg", 
-        "zoom": "./src/image/shirt-red-zoom.jpg"
-    }
-},
-{
-    "id": 6,
-    "nome": "Camisa Lakers LeBron 23/24",
-    "liga": "NBA",
-    "time": "Los Angeles Lakers",
-    "categoria": "NBA",
-    "tamanho": ["P", "M", "G"],
-    "preco": 189.9,
-    "discount": 289.9,
-    "estoque": 6,
-    "tipo": "Third Kit",
-     "imagem":{
-        "frente": "./src/image/shirt-botafogo.jpg", 
-        "verso": "./src/image/shirt-red-verso.jpg", 
-        "zoom": "./src/image/shirt-red-zoom.jpg"
-    }
-},
-{
-    "id": 7,
-    "nome": "Camisa Chicago Bulls Jordan Retrô",
-    "liga": "NBA",
-    "time": "Chicago Bulls",
-    "categoria": "NBA retrô",
-    "tamanho": ["M", "G", "GG"],
-    "preco": 199.9,
-    "discount": 289.9,
-    "estoque": 5,
-    "tipo": "Torcedor",
-    "imagem":{
-        "frente": "./src/image/shirt-botafogo.jpg", 
-        "verso": "./src/image/shirt-red-verso.jpg", 
-        "zoom": "./src/image/shirt-red-zoom.jpg"
-    }
-},
-{
-    "id": 8,
-    "nome": "Camisa Kansas City Chiefs Mahomes",
-    "liga": "NFL",
-    "time": "Kansas City Chiefs",
-    "categoria": "NFL",
-    "tamanho": ["P", "M", "G"],
-    "preco": 219.9,
-    "discount": 289.9,
-    "estoque": 4,
-    "tipo": "Torcedor",
-    "imagem":{
-        "frente": "./src/image/shirt-botafogo.jpg", 
-        "verso": "./src/image/shirt-red-verso.jpg", 
-        "zoom": "./src/image/shirt-red-zoom.jpg"
-    }
-  }
 ]
